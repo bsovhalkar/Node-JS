@@ -88,6 +88,9 @@ server.post('/product',addProduct);
 server.get('/user',getUser);
 server.post('/user',regUser);
 
+const cors = require("cors");
+app.use(cors());
+
 server.listen(process.env.PORT,()=>{
     console.log("Server Started !");
 })
